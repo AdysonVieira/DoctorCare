@@ -1,0 +1,38 @@
+:root{
+    --brand-green: #00856f;
+    --brand-green-light: #dce9e2;
+    --brand-green-light-02: #f7f9f9;
+    --brand-beige: #fffaf1;
+    --brand-green-hover: #00453a;
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #f8f7f7;
+}
+
+.color-primary {
+    color: var(--brand-green);
+}
+
+.color-primary-light {
+    color: var(--brand-green-light);
+}
+
+.color-primary-light-2 {
+    color: var(--brand-green-light-02);
+}
+
+.color-primary-hover {
+    color: var(--brand-green-hover);
+}
+
+.color-primary-beige {
+    color: var(--brand-beige);
+}
+
+.color-secondary-h {
+    color: var(--gray-headline);
+}
+
+.color-secondary-p {
+    color: var(--gray-paragraph);
+}

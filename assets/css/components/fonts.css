@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    font-size: 62.5% /* 1rem == 10px */
+}
+.sobtitulo {
+    font: 700 1.4rem/150% 'DM Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.titulo-xl {
+    font: 700 5.2rem/130% 'DM Sans', sans-serif;
+}
+
+.titulo-l {
+    font: 700 3rem/130% 'DM Sans', sans-serif;
+}
+
+.titulo-m {
+    font: 700 2.4rem/31px 'DM Sans', sans-serif;
+}
+
+.texto-m {
+    font: 400 1.8rem/150% 'DM Sans', sans-serif;
+}
+
+.fonte-menu {
+    font: 700 1.6rem/21px 'DM Sans', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .sobtitulo {
+        font: 700 1.4rem/150% 'DM Sans', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .titulo-xl {
+        font: 700 3.4rem/130% 'DM Sans', sans-serif;
+    }
+    
+    .titulo-l {
+        font: 700 3rem/130% 'DM Sans', sans-serif;
+    }
+    
+    .titulo-m {
+        font: 700 2.4rem/31px 'DM Sans', sans-serif;
+    }
+    
+    .texto-m {
+        font: 400 1.8rem/150% 'DM Sans', sans-serif;
+    }
+    
+    .fonte-menu {
+        font: 700 1.6rem/21px 'DM Sans', sans-serif;
+    }
+}

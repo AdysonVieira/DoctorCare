@@ -1,0 +1,10 @@
+/* COMPONENTS */
+@import url("assets/css/components/global.css");
+@import url("assets/css/components/fonts.css");
+@import url("assets/css/components/colors.css");
+@import url("assets/css/components/buttons.css");
+
+/* HOME */
+@import url("assets/css/header.css");
+@import url("assets/css/home.css");
+@import url("assets/css/servicos.css");
