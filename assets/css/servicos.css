@@ -1,5 +1,5 @@
 .servicos-bg {
-    background: var(--white);
+    background: var(--brand-green-light-02);
     padding-top: 16rem;
     padding-bottom: 16rem;
 }
@@ -29,7 +29,7 @@
 
 .servicos-card {
     background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 0.6rem;
     border: 1px solid var(--brand-green-light);
     padding: 2.4rem;
 }
@@ -39,3 +39,9 @@
     margin-bottom: 1.6rem;
 }
 
+@media (max-width:600px) {
+    .servicos-bg {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+}

@@ -13,7 +13,7 @@
 }
 
 .titulo-l {
-    font: 700 3rem/130% 'DM Sans', sans-serif;
+    font: 700 4rem/130% 'DM Sans', sans-serif;
 }
 
 .titulo-m {
@@ -26,6 +26,10 @@
 
 .fonte-menu {
     font: 700 1.6rem/21px 'DM Sans', sans-serif;
+}
+
+.fonte-footer {
+    font: 400 1.4rem/1.4rem 'DM Sans', sans-serif;
 }
 
 @media (max-width: 800px) {

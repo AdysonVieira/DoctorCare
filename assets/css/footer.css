@@ -1,0 +1,20 @@
+.footer-bg {
+    background: var(--brand-green);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-info img {
+    margin-bottom: 2.4rem;
+}
+
+.footer-info > img + p {
+    margin-bottom: 1.6rem;
+}

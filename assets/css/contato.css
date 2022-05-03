@@ -1,0 +1,49 @@
+.contato {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato-info h4 {
+    margin-bottom: 1.6rem;
+}
+
+.contato-info h2 {
+    margin-bottom: 4rem;
+}
+
+.contato-info li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.contato-info li:first-child {
+    margin-bottom: 1.6rem;
+}
+
+.contato-info li:last-child {
+    margin-bottom: 4rem;
+}
+
+@media (max-width:600px) {
+    .contato {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        grid-template-columns: 1fr;
+    }
+
+    .contato-info {
+        grid-row: 1;
+    }
+    .contato-info button {
+        margin-bottom: 6rem;
+    }
+    .contato-img img {
+        width: 100%;
+        height: max-content;
+    }
+}
