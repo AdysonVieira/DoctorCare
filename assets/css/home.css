@@ -30,18 +30,15 @@
     justify-self: start;
 }
 
-.home-img {
-    position: relative;
-    bottom: -25px;
-    z-index: 0;
+.home-img img {
+    display: block;
+    object-position: 0 2.1rem;
+    margin: 0 auto;
 }
 
 /* DADOS */
 
 .home-dados {
-    position: relative;
-    z-index: 1;
-
     max-width: 100%;
     background: var(--brand-beige);
     border: 1px solid var(--brand-green-light);
@@ -56,10 +53,7 @@
 .home-dados-item {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
-    border-right: 2px solid var(--brand-green-light);
-    padding-right: 10rem;
+    text-align: center;    
 }
 
 .home-dados-item:last-child {
@@ -92,7 +86,7 @@
     .home-dados {
         flex-direction: column;
         gap: 6rem;
-        padding: 4rem 4rem;
+        padding: 4rem;
     }
 
     .home-dados-item {
