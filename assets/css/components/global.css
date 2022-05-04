@@ -1,4 +1,8 @@
 @charset "UTF-8";
+:root {
+    --nav-height: 7.2rem;
+}
+
 
 * {
     margin: 0;
