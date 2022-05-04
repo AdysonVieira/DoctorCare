@@ -6,8 +6,6 @@
 
 .footer {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -17,4 +15,21 @@
 
 .footer-info > img + p {
     margin-bottom: 1.6rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 3.2rem;
+    align-self: center;
+}
+
+@media (max-width:600px) {
+    .footer {
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    .footer-social {
+        align-self: start;
+    }
 }

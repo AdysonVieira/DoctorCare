@@ -92,7 +92,7 @@
     .home-dados {
         flex-direction: column;
         gap: 6rem;
-        padding: 4rem 8rem;
+        padding: 4rem 4rem;
     }
 
     .home-dados-item {
