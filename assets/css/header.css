@@ -40,6 +40,11 @@ nav a:hover:after {
     color: var(--brand-green-hover);
 }
 
+@media (min-width:800px) {
+    .menu-icon {
+        display: none;
+    }
+}
 
 @media (max-width:800px) {
     header nav, header .btn-secondary {
