@@ -21,7 +21,7 @@
 
 }
 
-.btn-secondary{
+.btn-secundary{
     display: flex;
     align-items: center;
 
@@ -38,9 +38,31 @@
     cursor: pointer;
 }
 
-.btn-secondary:hover {
+.btn-secundary:hover {
     border: 1px solid var(--brand-green);
     background: var(--brand-green);
     color: var(--white);
+}
 
+.btn-secundary-white {
+    display: flex;
+    align-items: center;
+
+    min-width: max-content;
+    padding: 1rem 2.4rem;
+    border-radius: 4rem;
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    
+    color: var(--white);
+    font: 700 1.4rem/1.4rem 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+}
+
+.btn-secundary-white:hover {
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--brand-green);
 }

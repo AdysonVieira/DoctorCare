@@ -11,38 +11,8 @@
     padding: 1.6rem 2.4rem;
 }
 
-.scroll > .header-content svg {
-    fill: white;
-}
-
-nav > ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-nav a {
-    color: var(--brand-green);
-    font-weight: 300;
-    padding: 16px 0;
-    position: relative;
-}
-
-nav a:hover {
-    color: var(--brand-green-hover);
-    font-weight: 500;
-    position: relative;
-}
-
-nav a:hover:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    top: 69px;
-    background: var(--brand-green-hover);
-    color: var(--brand-green-hover);
+.header-content .menu-mobile{
+    display: none;    
 }
 
 .scroll {
@@ -52,49 +22,84 @@ nav a:hover:after {
     background: var(--brand-green);
 }
 
+.scroll > .header-content svg {
+    fill: white;
+}
+
 .scroll svg:nth-child(1) path {
     fill: white;
 }
-.scroll svg:nth-child(2) path {
+
+.scroll .open-menu path {
     stroke: white;
 }
 
-.scroll a {
-    color: var(--brand-green-light);
-    font-weight: 300;
-    padding: 16px 0;
+
+/* ###### MENU EXPANDED ######## */
+
+body.menu-expanded > *:not(header) {
+    display: none
+}
+
+body.menu-expanded .logo,
+body.menu-expanded .close-menu {
     position: relative;
+    z-index: 10;
 }
 
-.scroll a:hover {
-    color: white;
-    position: relative;
-    font-weight: 500;
+body.menu-expanded .logo path {
+    fill: white;
 }
 
-.scroll a:hover:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    top: 69px;
-    background: white;
-    color: white;
+body.menu-expanded {
+    overflow: hidden;
 }
 
-@media (min-width:800px) {
-    svg:nth-child(2) path {
-        display: none;
-    }
-
-    .scroll svg:nth-child(2) path {
-        display: none;
-    }
+.menu-mobile,
+.close-menu,
+.body.menu-expanded .open-menu {
+    opacity: 0;
+    visibility: hidden;
 }
 
-@media (max-width:800px) {
-    header nav, header .btn-secondary {
-        display: none;
-    }
+body.menu-expanded .menu-mobile,
+body.menu-expanded .close-menu {
+    opacity: 1;
+    visibility: visible;
 }
+
+body.menu-expanded .menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--brand-green);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+.menu-mobile-social ul {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.menu-mobile li {
+    text-align: center;
+    color: var(--white);
+}
+
+.menu-mobile li:not(:last-child) {
+    margin-bottom: 3.2rem;
+}
+
+.menu-mobile {
+    padding-top: 10rem;
+}
+
+
+
