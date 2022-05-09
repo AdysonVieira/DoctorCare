@@ -1,12 +1,10 @@
 function onScroll() {
     if(scrollY == 0) {
         navigation.classList.remove('scroll')
-        navButton.classList.remove('btn-secundary-white')
     }
     
     else {
         navigation.classList.add('scroll')
-        navButton.classList.add('btn-secundary-white')
     }
 }
 
@@ -17,3 +15,9 @@ function openMenu() {
 function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
+
+scrollReveal({
+    origin:'top',
+    distance: '30px',
+    duration: 900,
+}).reveal('.home-content h4, .home-content h1, .home-content p, .home-content button, .home-img');
