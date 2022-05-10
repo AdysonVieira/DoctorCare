@@ -91,7 +91,7 @@ body.menu-expanded .menu-mobile {
     align-items: center;
     gap: 6rem;
 
-    transition: transform 300ms;
+    transition: 800ms;
     transform: translateY(0);
 }
 

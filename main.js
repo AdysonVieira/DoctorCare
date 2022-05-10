@@ -1,4 +1,13 @@
+window.addEventListener('scroll', onScroll)
+
+onScroll()
+
 function onScroll() {
+    scrollNav()
+    scrollButtonTop()
+}
+
+function scrollNav() {
     if(scrollY == 0) {
         navigation.classList.remove('scroll')
     }
@@ -8,15 +17,7 @@ function onScroll() {
     }
 }
 
-function openMenu() {
-    document.body.classList.add('menu-expanded')
-}
-
-function closeMenu() {
-    document.body.classList.remove('menu-expanded')
-}
-
-function scrollTop() {
+function scrollButtonTop() {
     if(scrollY >= 300) {
         btnTop.classList.add('to-top')
     }
@@ -24,6 +25,14 @@ function scrollTop() {
     else {
         btnTop.classList.remove('to-top')
     }
+}
+
+function openMenu() {
+    document.body.classList.add('menu-expanded')
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu-expanded')
 }
 
 ScrollReveal({
