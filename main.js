@@ -20,4 +20,4 @@ scrollReveal({
     origin:'top',
     distance: '30px',
     duration: 900,
-}).reveal('.home-content h4, .home-content h1, .home-content p, .home-content button, .home-img');
+}).reveal('.home-content, .home-content button, .home-img');

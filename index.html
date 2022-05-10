@@ -8,7 +8,8 @@
     <meta name="description" content="Assistência médica simplificada para todos">
     <link rel="stylesheet" href="style.css">
 </head>
-<body onscroll="onScroll()">
+<body onscroll="onScroll(), scrollTop()">
+    <!-- HEADER -->
     <header id="navigation">
         <div class="header-content container">
             
@@ -63,7 +64,6 @@
            
         </div>
     </header>
-
     <!-- HOME -->
     <main id="home">
         <article class="home-bg">
@@ -105,6 +105,7 @@
             </div>
         </article>
     </main>
+    <!-- SERVIÇOS -->
     <section id="services" class="servicos-bg" aria-label="Sobre Nós">
         <div class="servicos container">
             <h4 class="sobtitulo color-primary">Serviços</h4>
@@ -143,6 +144,7 @@
                 </div>
             </div>
     </section>
+    <!-- SOBRE NÓS -->
     <section id="about" class="sobre-nos-bg" aria-label="Sobre Nós">
         <div class="sobre-nos container">
             <div class="sobre-nos-img">
@@ -158,6 +160,7 @@
             </div>
         </div>
     </section>
+    <!-- CONTATO -->
     <article id="contact">
         <div class="contato container">
             <div class="contato-info">
@@ -187,6 +190,15 @@
         </div>
     </article>
 
+    <div class="to-top">
+        <a class="btn-top" href="#home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 12L12 5L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>             
+        </a>
+    </div>
+    <!-- FOOTER -->
     <footer class="footer-bg">
         <div class="footer container">
             <div class="footer-info">
@@ -201,6 +213,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!-- ScroolReveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
