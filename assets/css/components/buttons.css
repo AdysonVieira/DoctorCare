@@ -68,23 +68,20 @@
 }
 
 .btn-top {
-    display: inline-block;
-    gap: 1rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     position: fixed;
     bottom: 2.0rem;
     right: 2.0rem;
     
-    min-width: max-content;
-    padding: 1.6rem;
-    border-radius: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
     box-sizing: border-box;
     
     background: var(--brand-green);
-    color: var(--white);
-    font: 700 1.4rem/1.4rem 'DM Sans', sans-serif;
-    text-transform: uppercase;
-    
+
     cursor: pointer;
 }
