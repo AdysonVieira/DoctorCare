@@ -1,5 +1,6 @@
 .header-content {
     width: 100vw;
+    height: var(--nav-height);
     position: fixed;
     top: 0;
     left: 50%;
@@ -9,10 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.6rem 2.4rem;
 }
 
-.header-content .menu-mobile, .close-menu{
+.header-content .menu, .close-menu{
     display: none;    
 }
 
@@ -41,7 +41,7 @@
 
 /* ###### MENU EXPANDED ######## */
 
-.menu-mobile {
+.menu {
     transform: translateY(100%);
 }
 
@@ -63,21 +63,21 @@ body.menu-expanded {
     overflow: hidden;
 }
 
-.menu-mobile,
+.menu,
 .close-menu,
 .body.menu-expanded .open-menu {
     opacity: 0;
     visibility: hidden;
 }
 
-body.menu-expanded .menu-mobile,
+body.menu-expanded .menu,
 body.menu-expanded .close-menu {
     opacity: 1;
     visibility: visible;
     display: inline-block;
 }
 
-body.menu-expanded .menu-mobile {
+body.menu-expanded .menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -95,20 +95,51 @@ body.menu-expanded .menu-mobile {
     transform: translateY(0);
 }
 
-.menu-mobile-social ul {
+.menu-social ul {
     display: flex;
     gap: 3.2rem;
 }
 
-.menu-mobile li {
+.menu li {
     text-align: center;
     color: var(--white);
 }
 
-.menu-mobile li:not(:last-child) {
+.menu li:not(:last-child) {
     margin-bottom: 3.2rem;
 }
 
-.menu-mobile {
+.menu {
     padding-top: 10rem;
+}
+
+@media (min-width:800px) {
+    
+    header#navigation .header-content * {
+        margin: initial;
+        padding: initial;
+        visibility: initial;
+        opacity: initial;
+        position: initial;
+        display: initial;
+        align-items: initial;
+        justify-content: initial;
+        flex-direction: initial;
+        transform: initial;
+        font-weight: initial;
+        font-size: initial;
+        color: initial;
+        background-color: initial;
+
+    }
+
+    header#navigation .open-menu,
+    header#navigation .close-menu,
+    header#navigation .menu-social {
+        display: none;
+    }
+
+    header#navigation .menu {
+
+    }
 }
