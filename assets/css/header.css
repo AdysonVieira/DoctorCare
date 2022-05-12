@@ -154,16 +154,50 @@ body.menu-expanded .menu {
         gap: 3.2rem;
         position: relative;
     }
-   
+    
+    /* Menu sem scroll */
     header#navigation .menu ul li a{
         color: var(--brand-green);
     }
-    
-    header#navigation .menu ul li a:active,
+
     header#navigation .menu ul li a:hover{
         color: var(--brand-green-hover);
-        font-weight: 500;
+    }
+    
+    header#navigation .menu ul li a::after{
+        content: "";
+        display: block;
+
+        width: 0;
+        height: 2px;
         
+        position: relative;
+        bottom: -2.4rem;
+
+        transition: ease 200ms;
+    }
+
+    header#navigation .menu ul li a:hover::after{
+        width: 100%;
+        background: var(--brand-green-hover);
+    }
+
+    /* Menu com scroll */
+    header#navigation.scroll .menu ul li a{
+        color: var(--brand-green-light);
+    }
+
+    header#navigation.scroll .menu ul li a::after{
+        background: var(--brand-green-light);
+    }
+
+    header#navigation.scroll .menu ul li a:hover{
+        color: var(--white);
+    }
+
+    header#navigation.scroll .menu > a {
+        border: 1px solid var(--white);
+        color: var(--white);
     }
 
     header#navigation .menu > a {
@@ -182,17 +216,13 @@ body.menu-expanded .menu {
         cursor: pointer;
     }
 
-    header#navigation.scroll .menu ul li a{
-        color: var(--brand-green-light);
+    header#navigation .menu > a:hover {
+        background: var(--brand-green);
+        color: var(--white);      
     }
 
-    header#navigation.scroll .menu ul li a:active,
-    header#navigation.scroll .menu ul li a:hover{
-        color: var(--white);
-    }
-
-    header#navigation.scroll .menu > a {
-        border: 1px solid var(--white);
-        color: var(--white);
+    header#navigation.scroll .menu > a:hover {
+        background: var(--white);
+        color: var(--brand-green);      
     }
 }
