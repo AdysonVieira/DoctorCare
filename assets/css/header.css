@@ -115,6 +115,7 @@ body.menu-expanded .menu {
 
 @media (min-width:800px) {
     
+    /* RESET NOS ESTILOS DO HEADER */
     header#navigation .header-content * {
         margin: initial;
         padding: initial;
@@ -130,6 +131,7 @@ body.menu-expanded .menu {
         font-size: initial;
         color: initial;
         background-color: initial;
+        border-color: initial;
 
     }
 
@@ -139,7 +141,58 @@ body.menu-expanded .menu {
         display: none;
     }
 
+    /* espaçamento entre o menu e o botão Agendar Consulta */
     header#navigation .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20vw;
+    }
+    
+    header#navigation .menu ul {
+        display: flex;
+        gap: 3.2rem;
+        position: relative;
+    }
+   
+    header#navigation .menu ul li a{
+        color: var(--brand-green);
+    }
+    
+    header#navigation .menu ul li a:active,
+    header#navigation .menu ul li a:hover{
+        color: var(--brand-green-hover);
+        font-weight: 500;
+        
+    }
 
+    header#navigation .menu > a {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        
+        padding: 1rem 2.4rem;
+        border-radius: 4rem;
+        
+        border: 1px solid var(--brand-green);
+        color: var(--brand-green);
+        font: 700 1.4rem/1.4rem 'DM Sans', sans-serif;
+        text-transform: uppercase;
+        
+        cursor: pointer;
+    }
+
+    header#navigation.scroll .menu ul li a{
+        color: var(--brand-green-light);
+    }
+
+    header#navigation.scroll .menu ul li a:active,
+    header#navigation.scroll .menu ul li a:hover{
+        color: var(--white);
+    }
+
+    header#navigation.scroll .menu > a {
+        border: 1px solid var(--white);
+        color: var(--white);
     }
 }
