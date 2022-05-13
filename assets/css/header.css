@@ -160,6 +160,7 @@ body.menu-expanded .menu {
         color: var(--brand-green);
     }
 
+    header#navigation .menu ul li a.active,
     header#navigation .menu ul li a:hover{
         color: var(--brand-green-hover);
     }
@@ -177,6 +178,7 @@ body.menu-expanded .menu {
         transition: ease 200ms;
     }
 
+    header#navigation .menu ul li a.active::after,
     header#navigation .menu ul li a:hover::after{
         width: 100%;
         background: var(--brand-green-hover);
@@ -190,7 +192,8 @@ body.menu-expanded .menu {
     header#navigation.scroll .menu ul li a::after{
         background: var(--brand-green-light);
     }
-
+    
+    header#navigation.scroll .menu ul li a.active,
     header#navigation.scroll .menu ul li a:hover{
         color: var(--white);
     }

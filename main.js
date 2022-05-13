@@ -7,6 +7,7 @@ onScroll()
 function onScroll() {
     scrollNav()
     scrollButtonTop()
+    scrollActiveMenu()
 }
 
 // Função para adicionar e remover a classe 'scroll' no menu, fazendo o menu trocar o backgroud quando rolar o scroll
